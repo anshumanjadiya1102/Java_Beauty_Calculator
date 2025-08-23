@@ -5,7 +5,7 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import javax.swing.*;
 
-public class Calculator extends JFrame {
+public class Java_Beauty_Calculator extends JFrame {
     private final JTextField display = new JTextField("0");
 
     // Calculator state
