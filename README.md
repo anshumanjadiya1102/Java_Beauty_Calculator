@@ -22,4 +22,10 @@ Supports basic arithmetic, percentage, sign toggle, clear, backspace, and **keyb
 
 ## 📸 Preview  
 
-> _(Optional: Add a screenshot here)_  
+> _(Optional: Add a screenshot here)_
+ 
+## Structure
+📦 java-calculator
+ ┣ 📜 Calculator.java   # Main calculator code
+ ┣ 📜 README.md         # Project documentation
+ ┗ 📸 screenshot.png    # (Optional) App preview image
