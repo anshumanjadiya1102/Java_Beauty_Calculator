@@ -56,6 +56,8 @@ cd Java_Beauty_Calculator
 
 ---
 
+'''
+
 ⚠️ Important: This is a GUI application.
 It requires a graphical environment (Windows, macOS, or Linux desktop).
 If you are on Linux server/WSL, you’ll need an X11 server (e.g. Xming, VcXsrv) or run with:
