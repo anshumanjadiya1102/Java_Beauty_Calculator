@@ -16,7 +16,8 @@ public class Java_Beauty_Calculator extends JFrame {
     private boolean justEvaluated = false;          // for chaining logic
     private final MathContext MC = new MathContext(16, RoundingMode.HALF_UP);
 
-    public Calculator() {
+    // Constructor
+    public Java_Beauty_Calculator() {
         super("Calculator");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(320, 460);
@@ -64,7 +65,14 @@ public class Java_Beauty_Calculator extends JFrame {
         int WHEN = JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT;
 
         bind(root, WHEN, "0", KeyStroke.getKeyStroke('0'), () -> onKey("0"));
-        for (char c='1'; c<='9'; c++) bind(root, WHEN, String.valueOf(c), KeyStroke.getKeyStroke(c), () -> onKey(String.valueOf(c)));
+
+        // ✅ FIXED: capture final variable for lambda
+        for (char c = '1'; c <= '9'; c++) {
+            final char key = c;
+            bind(root, WHEN, String.valueOf(key), KeyStroke.getKeyStroke(key),
+                    () -> onKey(String.valueOf(key)));
+        }
+
         bind(root, WHEN, "dot", KeyStroke.getKeyStroke('.'), () -> onKey("."));
 
         bind(root, WHEN, "plus",  KeyStroke.getKeyStroke('+'), () -> onKey("+"));
@@ -126,7 +134,6 @@ public class Java_Beauty_Calculator extends JFrame {
         if (pendingOp == null) {
             current = entering ? entry : current;
         } else {
-            // chain: compute previous pending op
             if (entering) current = compute(current, entry, pendingOp);
         }
         pendingOp = op;
@@ -143,7 +150,6 @@ public class Java_Beauty_Calculator extends JFrame {
             justEvaluated = true;
             updateDisplay(current);
         } else {
-            // pressing = twice repeats the last entry
             updateDisplay(entering ? entry : current);
         }
     }
@@ -183,7 +189,6 @@ public class Java_Beauty_Calculator extends JFrame {
     }
 
     private void percent() {
-        // percent of current (like many handheld calculators): entry = current * entry / 100
         if (pendingOp != null && entering) {
             entry = current.multiply(entry, MC).divide(new BigDecimal("100"), MC);
             updateDisplay(entry);
@@ -213,7 +218,8 @@ public class Java_Beauty_Calculator extends JFrame {
         JOptionPane.showMessageDialog(this, msg, "Error", JOptionPane.ERROR_MESSAGE);
     }
 
+    // Main method
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Calculator::new);
+        SwingUtilities.invokeLater(Java_Beauty_Calculator::new);
     }
 }
