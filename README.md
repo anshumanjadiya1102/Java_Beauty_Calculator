@@ -51,7 +51,7 @@ Styled with a clean UI to give you a lightweight but **beautiful desktop calcula
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/yourusername/Java_Beauty_Calculator.git
+git clone https://github.com/anshumanjadiya1102/Java_Beauty_Calculator.git
 cd Java_Beauty_Calculator
 
 ---
