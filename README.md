@@ -23,10 +23,11 @@ Supports basic arithmetic, percentage, sign toggle, clear, backspace, and **keyb
 
  
 ## Structure
+```
 📦 java-calculator
  ┣ 📜 Calculator.java   # Main calculator code
  ┣ 📜 README.md         # Project documentation
-
+```
  ---
 
  # 🧮 Java Beauty Calculator  
@@ -53,17 +54,22 @@ Styled with a clean UI to give you a lightweight but **beautiful desktop calcula
 ```bash
 git clone https://github.com/anshumanjadiya1102/Java_Beauty_Calculator.git
 cd Java_Beauty_Calculator
+```
 
 ---
 
-'''
 
-⚠️ Important: This is a GUI application.
-It requires a graphical environment (Windows, macOS, or Linux desktop).
-If you are on Linux server/WSL, you’ll need an X11 server (e.g. Xming, VcXsrv) or run with:
+
+ ## ⚠️ Important: This is a GUI application.
+- It requires a graphical environment (Windows, macOS, or Linux desktop).
+-If you are on Linux server/WSL, you’ll need an X11 server (e.g. Xming, VcXsrv) or run with:
+```
 xvfb-run java Java_Beauty_Calculator
-🎹 Keyboard Shortcuts
+```
+
+## 🎹 Keyboard Shortcuts
 Key	Action
+```
 0–9	Enter digits
 .	Decimal point
 +	Addition
@@ -75,11 +81,17 @@ Esc	Clear (C)
 Backspace	Delete last digit
 %	Percentage
 ±	Toggle sign
-📦 Build a .jar
+```
+ ## 📦 Build a .jar
 
 If you want to create a portable JAR file:
-
+```
 javac Java_Beauty_Calculator.java
 jar cfe Calculator.jar Java_Beauty_Calculator *.class
 java -jar Calculator.jar
+```
+# Thanks a lot
+> Thanks a lot for your love for Java_Beauty_Calculator
+<img width="1311" height="266" alt="image22" src="https://github.com/user-attachments/assets/903e1cd5-9506-4e58-812e-66a4479ca794" />
 
+## **_This repository made me Developer of the day._**
