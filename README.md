@@ -90,6 +90,16 @@ javac Java_Beauty_Calculator.java
 jar cfe Calculator.jar Java_Beauty_Calculator *.class
 java -jar Calculator.jar
 ```
+## Star History
+
+<a href="https://www.star-history.com/#anshumanjadiya1102/Java_Beauty_Calculator&https:/&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=anshumanjadiya1102/Java_Beauty_Calculator,https:/&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=anshumanjadiya1102/Java_Beauty_Calculator,https:/&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=anshumanjadiya1102/Java_Beauty_Calculator,https:/&type=Date" />
+ </picture>
+</a>
+
 # Thanks a lot
 > Thanks a lot for your love for Java_Beauty_Calculator
 <img width="1311" height="266" alt="image22" src="https://github.com/user-attachments/assets/903e1cd5-9506-4e58-812e-66a4479ca794" />
