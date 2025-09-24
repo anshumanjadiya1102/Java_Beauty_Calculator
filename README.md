@@ -1,3 +1,7 @@
+<div align=center>
+<img src="https://socialify.git.ci/anshumanjadiya1102/Java_Beauty_Calculator/image?description=1&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating+Cogs&pulls=1&stargazers=1&theme=Dark" alt="Java_Beauty_Calculator" width="640" height="320" />
+</div>
+
 # 🧮 Java Swing Calculator  
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)  
